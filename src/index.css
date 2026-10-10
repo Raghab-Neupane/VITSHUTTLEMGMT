@@ -1,0 +1,21 @@
+.routes-map-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 16px;
+}
+
+.routes-map-selector button {
+  padding: 10px 16px;
+  border: 1px solid #d4d4d4;
+  border-radius: 10px;
+  background: white;
+  color: #262626;
+  cursor: pointer;
+}
+
+.routes-map-selector button.active {
+  background: #171717;
+  color: white;
+  border-color: #171717;
+}

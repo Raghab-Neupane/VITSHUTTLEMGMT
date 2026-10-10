@@ -1,0 +1,61 @@
+.prp-map-section {
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.prp-map-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.prp-map-heading h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.prp-map-heading p {
+    margin: 6px 0 0;
+    color: #737373;
+    font-size: 14px;
+}
+
+.prp-map-status {
+    background: #fce7f3;
+    color: #9d174d;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.prp-map-container {
+    height: 420px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 16px;
+    border: 1px solid #f3d5e5;
+}
+
+.prp-leaflet-map {
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+@media (max-width: 600px) {
+    .prp-map-section {
+        padding: 10px;
+    }
+
+    .prp-map-container {
+        height: 360px;
+    }
+
+    .prp-map-heading h2 {
+        font-size: 19px;
+    }
+}
