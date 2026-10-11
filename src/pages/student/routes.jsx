@@ -9,16 +9,16 @@ export default function Routes() {
 
     return (
         <main className="routes-page">
-            <div className="routes-map-selector">
-                <button id="hostel-btn"
-                    className={selectedMap === "mens" ? "active" : ""}
+            <div className="routes-map-selector" aria-label="Select hostel route">
+                <button
+                    className={`hostel-btn ${selectedMap === "mens" ? "active" : ""}`}
                     onClick={() => setSelectedMap("mens")}
                 >
                     Men's Hostel
                 </button>
 
-                <button id="hostel-btn"
-                    className={selectedMap === "prp" ? "active" : ""}
+                <button
+                    className={`hostel-btn ${selectedMap === "prp" ? "active" : ""}`}
                     onClick={() => setSelectedMap("prp")}
                 >
                     PRP Ladies' Hostel

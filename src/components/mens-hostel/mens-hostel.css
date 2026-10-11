@@ -9,7 +9,8 @@
     justify-content: space-between;
     align-items: center;
     gap: 12px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
+    padding: 0 2px;
 }
 
 .hostel-map-heading h2 {
@@ -27,7 +28,7 @@
     background: #e8f7ee;
     color: #167344;
     padding: 6px 10px;
-    border-radius: 20px;
+    border-radius: 5px;
     font-size: 12px;
     white-space: nowrap;
 }
@@ -36,7 +37,7 @@
     height: 420px;
     width: 100%;
     overflow: hidden;
-    border-radius: 16px;
+    border-radius: 8px;
     border: 1px solid #e5e7eb;
 }
 
@@ -44,6 +45,99 @@
     height: 100%;
     width: 100%;
     z-index: 0;
+}
+
+.available-shuttles {
+    margin-top: 18px;
+    padding: 15px;
+    border: 1px solid #dfe8e3;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.available-shuttles-heading,
+.available-shuttle,
+.available-shuttles-heading > div,
+.available-shuttle-meta {
+    display: flex;
+    align-items: center;
+}
+
+.available-shuttles-heading {
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.available-shuttles-heading > div {
+    gap: 7px;
+}
+
+.available-shuttles-heading h3 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.available-shuttles-heading small {
+    color: #7b8580;
+    font-size: 10px;
+}
+
+.availability-indicator {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #3eab6f;
+    box-shadow: 0 0 0 4px #e2f3e7;
+}
+
+.available-shuttle {
+    gap: 10px;
+    padding: 11px 0;
+    border-top: 1px solid #edf0ee;
+}
+
+.available-shuttle-icon {
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    flex: 0 0 auto;
+    border-radius: 6px;
+    color: #17664f;
+    background: #e5f4e9;
+}
+
+.available-shuttle > div:nth-child(2) {
+    min-width: 0;
+    flex: 1;
+}
+
+.available-shuttle strong {
+    display: block;
+    font-size: 12px;
+}
+
+.available-shuttle p {
+    overflow: hidden;
+    margin: 3px 0 0;
+    color: #69716d;
+    font-size: 11px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.available-shuttle-meta {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+    color: #66706b;
+    font-size: 11px;
+}
+
+.available-shuttle-meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
 }
 
 @media (max-width: 600px) {

@@ -1,9 +1,42 @@
-.hostel-btn {
-    padding: 10px 20px;
+.routes-page {
+    width: 100%;
+    min-width: 0;
+    padding-top: 16px;
+}
+
+.routes-map-selector {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4px;
+    margin: 0 16px 4px;
+    padding: 4px;
+    background: #e9eeeb;
+    border: 1px solid #dfe6e2;
     border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 500;
-    transition: background 0.3s ease;
+}
+
+.hostel-btn {
+    min-width: 0;
+    min-height: 40px;
+    padding: 8px 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background: transparent;
+    color: #555963;
+    font-size: 12px;
+    font-weight: 650;
+    transition: all 0.2s ease;
+}
+
+.hostel-btn.active {
+    background: #fff;
+    color: #183f35;
+    border-color: #dce4e0;
+    box-shadow: 0 1px 3px rgb(23 50 43 / 10%);
+}
+
+@media (max-width: 600px) {
+    .routes-map-selector {
+        margin: 0 10px 4px;
+    }
 }
